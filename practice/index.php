@@ -5,5 +5,6 @@
 </head>
 <body>
     <h1>Practice Application!!</h1>
+    <img src='/images/hes-logo.png'>
 </body>
 </html>
