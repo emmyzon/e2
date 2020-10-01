@@ -1,0 +1,28 @@
+html {
+    margin: 0 auto;
+    padding: 2rem;
+}
+body {
+    font-family: Myriad, sans-serif;
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+ul {
+    margin-bottom: 3rem;
+}
+li {
+    padding-bottom: .5rem;;
+}
+
+img {
+    width: 25%;
+}
