@@ -4,6 +4,8 @@
 
 ## Description and Usage:
 A game simulator for Rock, Paper, Scissors.
+The form takes user input (choice of rock, paper or scissors).
+Submitting the form randomly selects the opponents choice, and determines the winner based on the user input.
 <!-- Refresh the page to see new results. -->
 
 ## Outside resources
