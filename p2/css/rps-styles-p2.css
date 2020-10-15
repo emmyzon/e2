@@ -1,0 +1,40 @@
+html {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+body {
+    font-family: Myriad, sans-serif;
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+ul {
+    margin-bottom: 3rem;
+}
+li {
+    padding-bottom: .5rem;;
+}
+
+button {
+  background-color:#E9967A; /* Green */
+  border: none;
+  border-radius: 0.5rem;
+  color: #000066;
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+img {
+    width: 25%;
+}
