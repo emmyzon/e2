@@ -16,4 +16,9 @@ Game History
     @endforeach
 </div>
 
+<!-- link to return to home page to play again -->
+<div>
+    <a class='play-button' href='/'>Play Again!</a>
+</div>
+
 @endsection

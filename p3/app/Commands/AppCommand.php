@@ -4,7 +4,7 @@ namespace App\Commands;
 
 class AppCommand extends Command
 {
-    public function fresh()
+    public function refresh()
     {
         $this->migrate();
         $this->seed();
@@ -13,8 +13,8 @@ class AppCommand extends Command
     public function migrate()
     {
         $this->app->db()->createTable('rounds', [
-            'move' => 'varchar(8)',
-            'throw' => 'varchar(8)',
+            'player_move' => 'varchar(8)',
+            'computer_move' => 'varchar(8)',
             'outcome' => 'varchar(255)',
             'time' => 'timestamp'
         ]);
@@ -28,37 +28,35 @@ class AppCommand extends Command
         for ($i = 0; $i < 10; $i++) {
             $moves = ['rock', 'paper', 'scissors'];
             # Randomly pick moves for each player
-            $move = $moves[rand(0, 2)];
-            $throw = $moves[rand(0, 2)];
-
-            # $outcome = '';
+            $player_move = $moves[rand(0, 2)];
+            $computer_move = $moves[rand(0, 2)];
 
             # Determine winner
-            if ($move == $throw) {
+            if ($player_move == $computer_move) {
                 $outcome = "It's a tie!";
-            } elseif ($move == $moves[0] and $throw == $moves[1]) {
+            } elseif ($player_move == $moves[0] and $computer_move == $moves[1]) {
                 $outcome = 'You lose!';
-            } elseif ($move == $moves[0] and $throw == $moves[2]) {
+            } elseif ($player_move == $moves[0] and $computer_move == $moves[2]) {
                 $outcome = 'You win!';
-            } elseif ($move == $moves[1] and $throw == $moves[0]) {
+            } elseif ($player_move == $moves[1] and $computer_move == $moves[0]) {
                 $outcome = 'You win!';
-            } elseif ($move == $moves[1] and $throw == $moves[2]) {
+            } elseif ($player_move == $moves[1] and $computer_move == $moves[2]) {
                 $outcome = 'You lose!';
-            } elseif ($move == $moves[2] and $throw == $moves[0]) {
+            } elseif ($player_move == $moves[2] and $computer_move == $moves[0]) {
                 $outcome = 'You lose!';
-            } elseif ($move == $moves[2] and $throw == $moves[1]) {
+            } elseif ($player_move == $moves[2] and $computer_move == $moves[1]) {
                 $outcome = 'You win!';
             }
 
             # Set up a round
             $round = [
-                'move' => $move,
-                'throw' => $throw,
+                'player_move' => $player_move,
+                'computer_move' => $computer_move,
                 'outcome' => $outcome,
                 'time' => $faker->dateTimeThisMonth()->format('Y-m-d H:i:s')
             ];
 
-            # Insert the round
+            # Insert the round into the db
             $this->app->db()->insert('rounds', $round);
         }
     }

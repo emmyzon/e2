@@ -44,9 +44,20 @@ a:active {
     border-radius: 0.5rem;
     display: inline-block;
     padding: 0.75rem 2rem;
-    margin: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     background-color: #000066;
     color: #E9967A;
+}
+
+a.play-button {
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin: 3rem;
+    background-color: #E9967A;
+    color: #000066;
 }
 
 h2 {
@@ -55,7 +66,7 @@ h2 {
 
 ul {
     display: inline-block;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
