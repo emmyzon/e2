@@ -1,8 +1,24 @@
-# e2framework
+# Project 3
++ By: Emily Wolchko
++ Production URL: <http://e2p3.emmyzon.me>
 
-*e2framework* is a rudimentary PHP framework designed for the course [DGMD E-2 Web Programming for Beginners with PHP](https://hesweb.dev/e2).
 
-The goal of this software is to provide students an introduction to working with more advanced PHP frameworks such as Laravel and/or Symfony.
+## Description and Usage
+Rock-Paper-Scissors game with results tracked in a database.
 
-+ __Documentation:__ <https://hesweb.dev/e2/notes/php/e2framework/installation>
-+ __Guide:__ <https://hesweb.dev/e2/notes/php/frameworks/intro>
+Three pages:
++ Home page with game title and instructions, as well as round results once submitted
++ Round History page showing summary of results of every round of the game played
++ Round Details page showing the details of a specific round
+
+Demonstrates the following concepts:
++ Routes
++ Controllers
++ Views using Blade templating
++ Databases
++ Form Validation
+
+
+## Outside resources
+GIF sourced from https://giphy.com/stickers/thismightget-rock-paper-scissors-jqI3buvbN3EitBjHfB 
+

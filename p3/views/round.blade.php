@@ -25,6 +25,4 @@ Round Details
     <a class='play-button' href='/'>Play Again!</a>
 </div>
 
-
-
 @endsection
