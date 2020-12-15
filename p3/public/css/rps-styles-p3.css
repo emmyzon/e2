@@ -1,0 +1,102 @@
+html {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: Myriad, sans-serif;
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:active {
+    color: #E9967A;
+}
+
+.error p {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    background-color: lightgray;
+    color: darkred;
+}
+
+.game-history > a {
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin: 3rem;
+    background-color: #000066;
+    color: #E9967A;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+ul {
+    display: inline-block;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+li {
+    padding-bottom: .5rem;
+}
+
+.round-details > a {
+    color: lightgray;
+}
+
+.round-details > a:active {
+    color: #E9967A;
+}
+
+.round-details > a:visited {
+    color: #000066;
+}
+
+form {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.choices {
+    padding: 0.5rem;
+    /* color: #E9967A; */
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+button {
+  background-color:#E9967A; 
+  border: none;
+  border-radius: 0.5rem;
+  color: #000066;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+img {
+    width: 25%;
+}
